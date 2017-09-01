@@ -4,7 +4,7 @@ import {
     TOGGLE_INFO_MODAL
 } from './actions';
 
-const initialState = {
+export const initialState = {
     guesses: [],
     feedback: 'Make your guess!',
     correctAnswer: Math.round(Math.random() * 100),
@@ -64,4 +64,3 @@ export default (state, action) => {
     }
     return state;
 };
-
